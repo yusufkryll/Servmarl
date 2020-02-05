@@ -13,13 +13,13 @@ Servmarl is Server side markup language. You can write python and node.js in tag
 Burada indexin index.html olduğunu belirttik. Ama şu an index.html adında bir dosyamız yok. İndex.html dosyamızı oluşturuyoruz ve aşağıdaki örnek kodu içerisine yapıştırıyoruz.
 <br>
 ```
-<uml>
-<body>
-<python>
+<\uml>
+<\body>
+<\python>
 print("ilk servmarl projesi")
-</python>
-</body>
-</uml>
+<\/python>
+<\/body>
+<\/uml>
 ```
 <br>
 artık servmarlserver.exe yi başlatabiliriz. Başlattığımızda server is running yazısı geliyorsa bir sorun yok demektir. Öyleyse browserdan localhost:1453 e giriyoruz ve karşımıza index sayfası çıkıyor.
