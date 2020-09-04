@@ -1,25 +1,6 @@
 # Servmarl
-Servmarl is Server side markup language. You can write python and node.js in tags.
+Realtime node.js in html.
+website: http://www.servmarl.com/
 
 # [Turkish] İlk Servmarl Projesi
-Şimdi ilk Servmarl projemizi oluşturalım. Öncelikle herhangi adda bir klasör oluşturalım ve bu klasöre servmarlserver.exe dosyamızı ekleyelim. Sonra files.json dosyasını oluşturmamız gerekiyor. files.json sayfalarımızı tanıtmamıza yarayan bir json dosyasıdır. örnek bir files.json dosyası:
-<br>
-```
-{
-    "index":"index.html"
-}
-```
-<br>
-Burada indexin index.html olduğunu belirttik. Ama şu an index.html adında bir dosyamız yok. İndex.html dosyamızı oluşturuyoruz ve aşağıdaki örnek kodu içerisine yapıştırıyoruz.
-<br>
-
-
-    <uml>
-    <body>
-    <python>
-    print("ilk servmarl projesi")
-    </python>
-    </body>
-    </uml>
-<br>
-artık servmarlserver.exe yi başlatabiliriz. Başlattığımızda server is running yazısı geliyorsa bir sorun yok demektir. Öyleyse browserdan localhost:1453 e giriyoruz ve karşımıza index sayfası çıkıyor.
+Githubdan dosyaları indirip rardan çıkardıktan sonra klasöre bir komut satırını açın ve  ```./index.js 3000``` komutunu çalıştırın. Daha sonra browserda localhost:3000'e girin. Çalışıyorsa okumaya devam edin eğer çalışmıyorsa issues bölümünden sorabilirsiniz. "public" klasörü altındaki index.htmli açıp <node> tagları arasına javascript kodlarınızı yazabilirsiniz.
