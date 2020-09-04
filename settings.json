@@ -1,7 +1,7 @@
 {
-    "awake": "./pages/awake.html",
-    "start": "./pages/start.html",
-    "pages": "./pages",
+    "awake": "./public/awake.html",
+    "start": "./public/start.html",
+    "pages": "./public",
     "appFolder": "./public",
     "error404": "error 404: page not exists!",
     "clientConnection": "a client connected",
