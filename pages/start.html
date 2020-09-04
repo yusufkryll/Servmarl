@@ -1,0 +1,40 @@
+<script>
+socket.on('noderesult', data=>{
+    document.getElementById(data.id).innerHTML=data.send;
+});  
+socket.on('get', str=>{
+    socket.emit('get', new Function("return " + str)());
+});
+socket.on('set', str=>{
+    new Function(str)();
+});
+socket.on('document', ()=>{
+    socket.emit('document', document);
+});
+let getParams = function (url) {
+	var params = {};
+	var parser = document.createElement('a');
+	parser.href = url;
+	var query = parser.search.substring(1);
+	var vars = query.split('&');
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split('=');
+		params[pair[0]] = decodeURIComponent(pair[1]);
+	}
+	return params;
+};
+
+let setParam = (key, value) => {
+    var url = new URL(document.location.href);
+    var search_params = url.searchParams;
+    search_params.set(key, value);
+    url.search = search_params.toString();
+    var new_url = url.toString();
+    document.location.href = new_url;
+}
+function goPage(path)
+{
+    socket.disconnect();
+    window.location = "?" + path;
+}
+</script>

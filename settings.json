@@ -1,0 +1,10 @@
+{
+    "awake": "./pages/awake.html",
+    "start": "./pages/start.html",
+    "pages": "./pages",
+    "appFolder": "./public",
+    "error404": "error 404: page not exists!",
+    "clientConnection": "a client connected",
+    "clientDisconnect": "a client disconnected",
+    "mainPage": "index.html"
+}
